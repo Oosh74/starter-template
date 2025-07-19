@@ -147,6 +147,7 @@ html:focus-within {
   isolation: isolate;
 }
 
+/* Button/inputs resets */
 button,
 input,
 select,
@@ -162,4 +163,42 @@ input:focus,
 select:focus,
 textarea:focus {
   outline: none;
+}
+
+/* Responsive typography scaling */
+h1 {
+  font-size: clamp(2.44rem, calc(2.05rem + 1.93vw), 3.55rem);
+}
+h2 {
+  font-size: clamp(1.95rem, calc(1.71rem + 1.24vw), 2.66rem);
+}
+h3 {
+  font-size: clamp(1.56rem, calc(1.41rem + 0.76vw), 2rem);
+}
+
+h4,
+h5,
+h6 {
+  font-size: clamp(1.25rem, calc(1.16rem + 0.43vw), 1.5rem);
+}
+
+p {
+  font-size: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
+}
+
+/* Media queries */
+@media (min-width: 640px) {
+  /* Small tablets and up */
+}
+
+@media (min-width: 768px) {
+  /* Tablets and small desktops */
+}
+
+@media (min-width: 1024px) {
+  /* Desktops */
+}
+
+@media (min-width: 1280px) {
+  /* Large desktops */
 }
